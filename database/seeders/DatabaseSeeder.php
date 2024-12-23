@@ -13,11 +13,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // is like u use each one here :
+        /*
+            User::factory()->create([
+                'name' => 'aymane lm3zaaa',
+                'email' => 'lmaa3za@goat.com',
+                'is_admin' => true
+            ]);
+            and
+            Category::factory()->create();
+            he call other file
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        */
+        // $this->call([
+        //     AdminSeeder::class,
+        //     CategorieSeeder::class,
+        //     PostSeeder::class,
+        // ]);
     }
 }
